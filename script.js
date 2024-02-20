@@ -1,4 +1,4 @@
-// Get the query string parameter
+//Get the query string parameter
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const section = params.get("section");
@@ -9,3 +9,6 @@ if (section === "projects") {
 } else if (section === "skills") {
   document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
 }
+
+
+

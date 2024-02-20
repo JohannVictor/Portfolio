@@ -1,79 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johann Victor Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <h1>Johann Victor</h1>
-            <nav>
-                <a href="index.html">About Me</a>
-                <a href="index.html?section=projects">Projects</a>
-                <a href="index.html?section=skills">Skills</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+        <nav class="header">
+            <a href="index.html">About Me</a>
+            <a href="index.html?section=projects">Projects</a>
+            <a href="index.html?section=skills">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <section>
+    <section class="aboutme">
 
-        <h2>About Me</h2>
-        <h3>From Insurance Pro to Creative Coder: Exploring the World of Web Development</h3>
-        <h4>Introduction:</h4>
-            <p>
-                My journey into web development started with a friend's request to build a website using Wix. Intrigued by the process, I soon discovered a deeper fascination with crafting web experiences. Seeing my friend, a talented web developer, fueled my passion even further. I wanted to understand the magic behind those user-friendly interfaces and visually appealing layouts.
-            </p>
-        <h4>Skills and Interests:</h4>
-            <p>
-                Drawn to the visual aspects of web development, I'm currently immersing myself in the world of front-end technologies like HTML, CSS, and JavaScript. I find it incredibly satisfying to see my code come to life as interactive and visually engaging elements.
+        <section class="grid1">
 
-                While new to coding, I bring over 15 years of experience from the insurance industry, honing skills like problem-solving, communication, attention to detail, and teamwork. These skills perfectly complement my approach to learning and collaborating.
-            </p>
-        <h4>Journey and Goals:</h4>
+            <h2>About Me</h2>
+            <h3>From Insurance Pro to Creative Coder: Exploring the World of Web Development</h3>
+            <h4>Introduction:</h4>
             <p>
-                I'm currently learning through platforms like Codecademy, enjoying the challenges and breakthroughs that come with every new concept mastered. My short-term goal is to land a junior web developer position, eager to contribute my skills and learn from experienced professionals. My long-term dream is to follow in my friend's footsteps and eventually become a leader in the field, guiding and mentoring others.
+                My journey into web development started with a friend's request to build a website using Wix. Intrigued
+                by the process, I soon discovered a deeper fascination with crafting web experiences. Seeing my friend,
+                a talented web developer, fueled my passion even further. I wanted to understand the magic behind those
+                user-friendly interfaces and visually appealing layouts.
             </p>
-        <h4>Call to Action:</h4>
+            <h4>Skills and Interests:</h4>
             <p>
-                I'm excited to see where this journey takes me, and I'm always open to connecting with other passionate developers or learning opportunities. Feel free to explore my portfolio to see my progress and get a glimpse into my creative vision.
+                Drawn to the visual aspects of web development, I'm currently immersing myself in the world of front-end
+                technologies like HTML, CSS, and JavaScript. I find it incredibly satisfying to see my code come to life
+                as interactive and visually engaging elements.
+
+                While new to coding, I bring over 15 years of experience from the insurance industry, honing skills like
+                problem-solving, communication, attention to detail, and teamwork. These skills perfectly complement my
+                approach to learning and collaborating.
             </p>
-        
-        <img src="Resources/Me.jpg" alt="Johann Victor">
+            <h4>Journey and Goals:</h4>
+            <p>
+                I'm currently learning through platforms like Codecademy, enjoying the challenges and breakthroughs that
+                come with every new concept mastered. My short-term goal is to land a junior web developer position,
+                eager to contribute my skills and learn from experienced professionals. My long-term dream is to follow
+                in my friend's footsteps and eventually become a leader in the field, guiding and mentoring others.
+            </p>
+            <h4>Call to Action:</h4>
+            <p>
+                I'm excited to see where this journey takes me, and I'm always open to connecting with other passionate
+                developers or learning opportunities. Feel free to explore my portfolio to see my progress and get a
+                glimpse into my creative vision.
+            </p>
+
+        </section>
+
+        <section class="grid2">
+
+            <img src="Resources/Me.jpg" alt="Johann Victor" class="jv">
+
+        </section>
 
     </section>
+
+
 
     <section id="projects">
 
         <h2>Projects</h2>
-        <h3>Springbok Fantasy Club</h3>
-        <img src="Resources/Springbok Fantasy Club.JPG" alt="Screenshot of Springbok Fantasy Club website">
-        <p>Fan made club page dedicated to the Springbok rugby team.</p>
 
-        <h3>Vertical Ascent</h3>
-        <img src="Resources/Vertical Ascent.JPG" alt="Screenshot of Vertical Ascent website">
-        <p>Preview of rock climbing website called Vertical Ascent</p>
+        <div class="project">
+            <h3>» Springbok Fantasy Club</h3>
+            <img src="Resources/Springbok Fantasy Club.JPG" alt="Screenshot of Springbok Fantasy Club website"
+                class="hidden">
+            <p class="hidden">Fan made club page dedicated to the Springbok rugby team.</p>
+        </div>
 
-        <h3>Number Guesser</h3>
-        <img src="Resources/NumberGuesser.JPG" alt="Screenshot of Number Guesser game">
-        <p>Number guesser game made using JavaScript</p>
+        <div class="project">
+            <h3>» Vertical Ascent</h3>
+            <img src="Resources/Vertical Ascent.JPG" alt="Screenshot of Vertical Ascent website" class="hidden">
+            <p class="hidden">Preview of rock climbing website called Vertical Ascent</p>
+        </div>
+
+        <div class="project">
+            <h3>» Number Guesser</h3>
+            <img src="Resources/NumberGuesser.JPG" alt="Screenshot of Number Guesser game" class="hidden">
+            <p class="hidden">Number guesser game made using JavaScript</p>
+        </div>
 
     </section>
 
     <section id="skills">
 
         <h2>Skills</h2>
-        <img src="Resources/html5.svg" alt="HTML">
-        <img src="Resources/css3-alt.svg" alt="CSS">
-        <img src="Resources/js.svg" alt="JavaScript">
-        <img src="Resources/git.svg" alt="Git">
-        <img src="Resources/github.svg" alt="GitHub">
-
+        <secion class="icons">
+            <img src="Resources/html5.svg" alt="HTML">
+            <img src="Resources/css3-alt.svg" alt="CSS">
+            <img src="Resources/js.svg" alt="JavaScript">
+            <img src="Resources/git.svg" alt="Git">
+            <img src="Resources/github.svg" alt="GitHub">
+        </secion>
     </section>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>

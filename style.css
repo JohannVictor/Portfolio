@@ -1,0 +1,120 @@
+* {
+  border: 1px solid red !important;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto; /* 1fr for h1, auto for remaining space */
+  align-items: center; /* Vertically center content */
+  /*font-family: "Teko", sans-serif;*/
+  /*font-optical-sizing: auto;*/
+  /*font-weight: ; /*Use a value from 300 to 700*/
+  /*font-style: normal;*/
+}
+
+h1 {
+  grid-column: 1; /* Place h1 in the first column */
+  font-weight: 700; /*text-transform: uppercase;*/
+  font-size: 40px;
+}
+
+nav {
+  grid-column: 2; /* Place nav in the second column */
+  display: flex; /* Arrange links horizontally */
+  justify-content: flex-end; /* Align links to the right */
+  font-size: 15px;
+}
+
+nav a {
+  margin-right: 10px; /* Add some spacing between links */
+}
+
+
+.aboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*align-items: flex-start;*/ /* Align items at the top of each column */
+}
+
+.grid1 {
+  grid-column: 1;
+}
+
+.grid2 {
+  grid-column: 2;
+  text-align: center;
+  /* Align the image in the center of the column */
+}
+
+.aboutme h2,
+.aboutme h3,
+.aboutme h4,
+.aboutme p {
+  /*font-family: "Teko", sans-serif;*/
+  /*font-optical-sizing: auto;*/
+  /*font-weight: ; /*Use a value from 300 to 700*/
+  /*font-style: normal;*/
+  padding: 5px;
+  margin: 5px;
+}
+.aboutme h2,
+.aboutme h3,
+.aboutme h4 {
+  line-height: 1;
+  font-weight: 600; /*Use a value from 300 to 700*/
+}
+.aboutme p {
+  font-weight: 400; /*Use a value from 300 to 700*/
+}
+
+.jv {
+  max-width: 100%; /* Allow resizing */
+  max-height: 400px;
+  margin: 30px auto; /* Center the image horizontally */
+  border-radius: 15px;
+}
+
+
+
+
+.project {
+  margin-bottom: 1px; /* Add some spacing between projects */
+  /*font-family: "Teko", sans-serif;*/
+  /*font-optical-sizing: auto;*/
+  /*font-weight: ; /*Use a value from 300 to 700*/
+  /*font-style: normal;*/
+}
+#projects {
+  padding: 5px;
+  margin: 5px;
+}
+/*#projects h2 {*/
+  /*font-family: "Teko", sans-serif;*/
+  /*font-optical-sizing: auto;*/
+  /*font-weight: ; /*Use a value from 300 to 700*/
+  /*font-style: normal;*/
+/*}*/
+
+.hidden {
+  display: none; /* Initially hide image and description */
+}
+
+#skills {
+  padding: 5px;
+  margin: 5px;
+}
+
+#skills img {
+  width: 40px; /* Adjust the width to your desired size */
+  height: 100%; /* Adjust the height to your desired size */
+  padding: 5px;
+  margin-bottom: 1px;
+}
+
+
+
+.contacticons img {
+  width: 40px; /* Adjust the width to your desired size */
+  height: 40px; /* Adjust the height to your desired size */
+  padding: 5px;
+}
