@@ -11,4 +11,17 @@ if (section === "projects") {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  var toggleElements = document.querySelectorAll(".toggle");
+
+  toggleElements.forEach(function (element) {
+      element.addEventListener("click", function () {
+          var siblingElements = this.parentElement.querySelectorAll(".hidden");
+
+          siblingElements.forEach(function (sibling) {
+              sibling.style.display = (sibling.style.display === "none" || sibling.style.display === "") ? "block" : "none";
+          });
+      });
+  });
+});
 

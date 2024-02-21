@@ -1,15 +1,27 @@
-* {
+/** {
   border: 1px solid red !important;
+}*/
+
+body {
+  margin-left: 300px;
+  margin-right: 300px;
+  background-image: url("Resources/wickedbackground.svg"); /* Replace with the path to your image */
+  background-size: cover; /* Adjust as needed */
+  color: #080606;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
 }
+
+
+
 
 header {
   display: grid;
   grid-template-columns: 1fr auto; /* 1fr for h1, auto for remaining space */
   align-items: center; /* Vertically center content */
-  /*font-family: "Teko", sans-serif;*/
-  /*font-optical-sizing: auto;*/
-  /*font-weight: ; /*Use a value from 300 to 700*/
-  /*font-style: normal;*/
 }
 
 h1 {
@@ -50,10 +62,6 @@ nav a {
 .aboutme h3,
 .aboutme h4,
 .aboutme p {
-  /*font-family: "Teko", sans-serif;*/
-  /*font-optical-sizing: auto;*/
-  /*font-weight: ; /*Use a value from 300 to 700*/
-  /*font-style: normal;*/
   padding: 5px;
   margin: 5px;
 }
@@ -68,10 +76,11 @@ nav a {
 }
 
 .jv {
-  max-width: 100%; /* Allow resizing */
+  max-width: 100%; 
   max-height: 400px;
   margin: 30px auto; /* Center the image horizontally */
   border-radius: 15px;
+  border: 3px solid #000;
 }
 
 
@@ -79,21 +88,12 @@ nav a {
 
 .project {
   margin-bottom: 1px; /* Add some spacing between projects */
-  /*font-family: "Teko", sans-serif;*/
-  /*font-optical-sizing: auto;*/
-  /*font-weight: ; /*Use a value from 300 to 700*/
-  /*font-style: normal;*/
 }
 #projects {
   padding: 5px;
   margin: 5px;
 }
-/*#projects h2 {*/
-  /*font-family: "Teko", sans-serif;*/
-  /*font-optical-sizing: auto;*/
-  /*font-weight: ; /*Use a value from 300 to 700*/
-  /*font-style: normal;*/
-/*}*/
+
 
 .hidden {
   display: none; /* Initially hide image and description */
@@ -111,10 +111,38 @@ nav a {
   margin-bottom: 1px;
 }
 
+.jssquare {
+  border-radius: 15px;
+}
 
 
 .contacticons img {
   width: 40px; /* Adjust the width to your desired size */
   height: 40px; /* Adjust the height to your desired size */
   padding: 5px;
+}
+
+.project img {
+  max-width: 500px; 
+  max-height: 100%;
+  margin: 30px; /* Center the image horizontally */
+  border-radius: 15px;
+  border: 2px solid #000;
+}
+
+
+footer {
+  /*background-color: #f0f0f0;*/
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
