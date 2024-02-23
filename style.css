@@ -1,10 +1,14 @@
-/** {
+/* * {
   border: 1px solid red !important;
-}*/
+} */
+
+html, body {
+  scroll-behavior: smooth;
+}
 
 body {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 350px;
+  margin-right: 350px;
   background-image: url("Resources/wickedbackground.svg"); /* Replace with the path to your image */
   background-size: cover; /* Adjust as needed */
   color: #080606;
@@ -12,85 +16,186 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+  /* margin: 0; */
+  /* scroll-behavior: smooth; */
 }
 
 
 
+main {
+  flex: 1; /* Allow the main content to grow and take up remaining space */
+}
 
 header {
-  display: grid;
-  grid-template-columns: 1fr auto; /* 1fr for h1, auto for remaining space */
+  display: flex; /* Change from grid to flex */
+  justify-content: space-between; /* Adjust alignment */
   align-items: center; /* Vertically center content */
+  padding: 15px;
+  /* background-color: #333; */
+  color: #080606;
 }
 
+header h1 a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent element (in this case, the header) */
+}
+
+
 h1 {
-  grid-column: 1; /* Place h1 in the first column */
-  font-weight: 700; /*text-transform: uppercase;*/
+  font-weight: 700;
   font-size: 40px;
 }
 
 nav {
-  grid-column: 2; /* Place nav in the second column */
-  display: flex; /* Arrange links horizontally */
-  justify-content: flex-end; /* Align links to the right */
+  display: flex;
   font-size: 15px;
 }
 
 nav a {
-  margin-right: 10px; /* Add some spacing between links */
+  margin-right: 10px;
+  text-decoration: none;
+  color: #080606; 
+  /* Adjust link color */
 }
+
+
+
+/* header { */
+  /* display: grid; */
+  /* grid-template-columns: 1fr auto;  */
+  /* 1fr for h1, auto for remaining space */
+  /* align-items: center;  */
+  /* Vertically center content */
+/* } */
+
+/* h1 { */
+  /* grid-column: 1;  */
+  /* Place h1 in the first column */
+  /* font-weight: 700;  */
+  /*text-transform: uppercase;*/
+  /* font-size: 40px; */
+/* } */
+
+/* nav { */
+  /* grid-column: 2;  */
+  /* Place nav in the second column */
+  /* display: flex;  */
+  /* Arrange links horizontally */
+  /* justify-content: flex-end;  */
+  /* Align links to the right */
+  /* font-size: 15px; */
+/* } */
+
+/* nav a { */
+  /* margin-right: 10px;  */
+  /* Add some spacing between links */
+/* } */
 
 
 .aboutme {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /*align-items: flex-start;*/ /* Align items at the top of each column */
+  display: flex; /* Change from grid to flex */
+  justify-content: space-between; /* Adjust alignment */
+  /* padding: 20px;  */
+  /* Increase padding for better spacing */
 }
 
 .grid1 {
-  grid-column: 1;
+  max-width: 600px; /* Adjust max-width for the content */
 }
 
 .grid2 {
-  grid-column: 2;
   text-align: center;
-  /* Align the image in the center of the column */
+  padding-right: 100px;
+  padding-top: 50px;
 }
 
 .aboutme h2,
 .aboutme h3,
 .aboutme h4,
 .aboutme p {
-  padding: 5px;
-  margin: 5px;
+  padding: 10px; /* Adjust padding for better spacing */
+  margin: 10px; /* Adjust margin for better spacing */
 }
+
 .aboutme h2,
 .aboutme h3,
 .aboutme h4 {
   line-height: 1;
-  font-weight: 600; /*Use a value from 300 to 700*/
+  font-weight: 600;
 }
+
 .aboutme p {
-  font-weight: 400; /*Use a value from 300 to 700*/
+  font-weight: 400;
 }
 
 .jv {
-  max-width: 100%; 
+  max-width: 100%;
   max-height: 400px;
-  margin: 30px auto; /* Center the image horizontally */
+  width: auto; /* Ensures the width adjusts proportionally to the max-width */
+  height: auto; /* Ensures the height adjusts proportionally to the max-height */
   border-radius: 15px;
   border: 3px solid #000;
 }
 
 
 
+/* .aboutme { */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /*align-items: flex-start;*/ /* Align items at the top of each column */
+/* } */
+
+/* .grid1 { */
+  /* grid-column: 1; */
+/* } */
+
+/* .grid2 { */
+  /* grid-column: 2; */
+  /* text-align: center; */
+  /* Align the image in the center of the column */
+/* } */
+
+/* .aboutme h2, */
+/* .aboutme h3, */
+/* .aboutme h4, */
+/* .aboutme p { */
+  /* padding: 5px; */
+  /* margin: 5px; */
+/* } */
+/* .aboutme h2, */
+/* .aboutme h3, */
+/* .aboutme h4 { */
+  /* line-height: 1; */
+  /* font-weight: 600;  */
+  /*Use a value from 300 to 700*/
+/* } */
+/* .aboutme p { */
+  /* font-weight: 400;  */
+  /*Use a value from 300 to 700*/
+/* } */
+
+/* .jv { */
+  /* max-width: 100%;  */
+  /* max-height: 400px; */
+  /* margin: 30px auto;  */
+  /* Center the image horizontally */
+  /* border-radius: 15px; */
+  /* border: 3px solid #000; */
+/* } */
+
+
+
 
 .project {
-  margin-bottom: 1px; /* Add some spacing between projects */
+  margin-bottom: 1px; 
+  /* Add some spacing between projects */
 }
 #projects {
-  padding: 5px;
+  /* padding: 5px; */
+  padding-left: 15px;
   margin: 5px;
 }
 
@@ -100,7 +205,8 @@ nav a {
 }
 
 #skills {
-  padding: 5px;
+  /* padding: 5px; */
+  padding-left: 15px;
   margin: 5px;
 }
 
@@ -113,6 +219,11 @@ nav a {
 
 .jssquare {
   border-radius: 15px;
+}
+
+
+.contactinfo {
+  padding-left: 20px;
 }
 
 
@@ -135,6 +246,7 @@ footer {
   /*background-color: #f0f0f0;*/
   padding: 20px;
   text-align: center;
+  padding: 10px;
 }
 
 footer a {
@@ -145,4 +257,56 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+
+.gridmobile {
+  display: none; /* Hide the gridmobile section by default */
+}
+
+
+@media only screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+  body {
+  margin-left: 5px;
+  margin-right: 5px;
+  }
+
+  .header-hide-s-screen {
+    display: none;
+  }
+
+  .grid2 {
+    display: none;
+  }
+
+  .gridmobile {
+    display: block; /* Show the gridmobile section for small screens */
+    text-align: center; /* Align the image in the center for mobile view */
+    padding-bottom: 30px;
+  }
+
+  .jvmobile {
+    max-height: 100%;
+    max-width: 100px;
+    border-radius: 15px;
+    border: 3px solid #000;
+    
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  /* Styles for laptops */
+}
+
+
+@media only screen and (min-width: 1280px) {
+  /* Styles for desktops */
 }

@@ -1,27 +1,38 @@
-//Get the query string parameter
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-const section = params.get("section");
+// //Get the query string parameter
+// const queryString = window.location.search;
+// const params = new URLSearchParams(queryString);
+// const section = params.get("section");
 
-// Smooth scrolling based on section parameter
-if (section === "projects") {
-  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
-} else if (section === "skills") {
-  document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
-}
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all elements with class 'toggle'
+  const toggles = document.querySelectorAll('.toggle');
 
+  // Add click event listener to each 'toggle' element
+  toggles.forEach(toggle => {
+      toggle.addEventListener('click', function () {
+          // Toggle the 'hidden' class on the next siblings (image and description)
+          const image = this.nextElementSibling;
+          const description = image.nextElementSibling;
 
-document.addEventListener("DOMContentLoaded", function () {
-  var toggleElements = document.querySelectorAll(".toggle");
-
-  toggleElements.forEach(function (element) {
-      element.addEventListener("click", function () {
-          var siblingElements = this.parentElement.querySelectorAll(".hidden");
-
-          siblingElements.forEach(function (sibling) {
-              sibling.style.display = (sibling.style.display === "none" || sibling.style.display === "") ? "block" : "none";
-          });
+          image.classList.toggle('hidden');
+          description.classList.toggle('hidden');
       });
   });
 });
 
+// // Smooth scrolling based on section parameter
+// if (section === "projects") {
+//   document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+// } else if (section === "skills") {
+//   document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
+// }
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const menuToggle = document.getElementById('menu-toggle');
+//   const navigation = document.querySelector('.header');
+
+//   menuToggle.addEventListener('click', function () {
+//       navigation.classList.toggle('show-menu');
+//   });
+// });
