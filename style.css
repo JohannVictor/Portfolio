@@ -177,6 +177,7 @@ footer a:hover {
   text-decoration: none; /* Remove the default underline on links */
 }
 
+
 @media only screen and (max-width: 480px) {
   /* Styles for mobile devices */
 
@@ -207,9 +208,9 @@ footer a:hover {
   }
 
   .project img {
-    max-width: 325px; 
+    max-width: 200px; 
     max-height: 100%;
-    margin: 30px; /* Center the image horizontally */
+    /* margin: 30px; Center the image horizontally */
     border-radius: 15px;
     border: 2px solid #000;
   }
